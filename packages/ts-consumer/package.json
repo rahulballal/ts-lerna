@@ -1,0 +1,17 @@
+{
+  "name": "@rb/ts-consumer",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@rb/ts-pkg": "*"
+  },
+  "scripts": {
+    "build":"tsc",
+    "start": "node ."
+  }
+}

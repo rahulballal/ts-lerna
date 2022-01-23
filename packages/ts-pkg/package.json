@@ -1,0 +1,21 @@
+{
+  "name": "@rb/ts-pkg",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "build/cjs/index.js",
+  "types": "build/cjs/index.d.ts",
+  "module": "build/es/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "@types/pino": "^7.0.5"
+  },
+  "dependencies": {
+    "pino": "^7.6.4"
+  },
+  "scripts": {
+    "build:cjs":"tsc -P tsconfig.cjs.json",
+    "build:esm": "tsc -P tsconfig.esm.json",
+    "build": "yarn run build:cjs && yarn run build:esm"
+  }
+}

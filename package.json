@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "bs": "lerna bootstrap",
+    "build:ts-pkg": "lerna run build --scope @rb/ts-pkg --stream",
+    "build:ts-con": "lerna run build --scope @rb/ts-consumer --stream",
+    "build:esm-con": "lerna run build --scope @rb/es6-consumer --stream"
+  }
+}

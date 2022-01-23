@@ -1,0 +1,16 @@
+{
+  "name": "@rb/cjs-consumer",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@rb/ts-pkg": "*"
+  },
+  "scripts": {
+    "start":"node ."
+  }
+}
